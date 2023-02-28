@@ -33,7 +33,12 @@ export const config: Options.Testrunner = {
     specs: [
         //'./test/specs/**/*.ts'
         //'./test/specs/sauceLoginPage.ts'
-        './test/specs/linksonthePage.ts'
+       // './test/specs/linksonthePage.ts'
+       //'./test/specs/login.e2e.ts'
+      // './test/specs/waitforTestPage.ts'
+      './test/specs/demoAutomationPage.ts'
+
+      
         
     ],
     // Patterns to exclude.

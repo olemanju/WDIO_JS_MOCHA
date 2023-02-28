@@ -8,6 +8,8 @@ export default class Page {
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     public open (path: string) {
+        browser.maximizeWindow()
         return browser.url(`https://the-internet.herokuapp.com/${path}`)
     }
 }
+//https://the-internet.herokuapp.com/dynamic_loading/1

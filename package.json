@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "WDIOTS",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.ts"
@@ -11,8 +10,8 @@
   "author": "manjunatha",
   "license": "ISC",
   "dependencies": {
-    "@wdio/cli": "^8.3.11"
-    
+    "@wdio/cli": "^8.3.11",
+    "npm-check-updates": "^16.7.10"
   },
   "devDependencies": {
     "@wdio/allure-reporter": "^8.3.5",
