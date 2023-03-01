@@ -11,7 +11,7 @@ class demoAutomationPage{
     }
     private get submitButton () {
         
-        return $('#submitbtn');
+        return $('#firstpassword');
     }
     
     
@@ -21,8 +21,10 @@ class demoAutomationPage{
 async selectdynamicdropdown(countryName: string){
     const dropdownselectItem = $(`//*[@id='select2-country-results']/li[text()='${countryName}']`)
     await this.submitButton.scrollIntoView()
+    await browser.pause(2000)
     await  this.selectCountriesDropdown.click()
     await this.searchTextBoxDropdown.setValue(countryName)
+    await browser.pause(2000)
     await dropdownselectItem.click()
 }
 }
